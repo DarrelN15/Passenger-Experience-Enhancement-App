@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'entertainment_screen.dart';
+import 'flight_info_screen.dart';
+import 'personal_controls_screen.dart';
 
 void main() {
   runApp(const MaterialApp(home: HomeScreen()));
@@ -14,10 +17,11 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
+  // Update _widgetOptions in HomeScreen
   static List<Widget> _widgetOptions = <Widget>[
-    Text('Flight Info Screen'),
-    Text('Personal Controls Screen'),
-    Text('Entertainment Screen'),
+    FlightInfoScreen(),
+    PersonalControlsScreen(),
+    EntertainmentScreen()
   ];
 
   void _onItemTapped(int index) {
