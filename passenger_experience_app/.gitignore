@@ -54,8 +54,5 @@ pubspec.lock
 flutter_export_environment.sh
 generated_plugin_registrant.dart
 
-# Image Assets (Remove if you want images in source control)
-images/*.png
-
 # History Files
 .history/
