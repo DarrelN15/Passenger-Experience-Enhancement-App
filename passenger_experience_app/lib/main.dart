@@ -7,21 +7,54 @@ void main() {
   runApp(const MaterialApp(home: HomeScreen()));
 }
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Welcome Aboard!')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              'Passenger Experience App',
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 10),
+            const Text('Explore flight info, controls, and entertainment!'),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const MainScreen()));
+              },
+              child: const Text('Start'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class MainScreen extends StatefulWidget {
+  const MainScreen({super.key});
+
+  @override
+  _MainScreenState createState() => _MainScreenState();
+}
+
+class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
 
-  // Update _widgetOptions in HomeScreen
-  static List<Widget> _widgetOptions = <Widget>[
-    FlightInfoScreen(),
-    PersonalControlsScreen(),
-    EntertainmentScreen()
+  static final List<Widget> _widgetOptions = <Widget>[
+    const FlightInfoScreen(),
+    const PersonalControlsScreen(),
+    const EntertainmentScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -34,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Passenger Experience App'),
+        title: const Text('Passenger Experience App'),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
