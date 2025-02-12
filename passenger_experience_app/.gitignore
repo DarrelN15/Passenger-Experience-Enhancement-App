@@ -1,0 +1,61 @@
+# Flutter & Dart
+.dart_tool/
+.packages
+.pub-cache/
+build/
+android/.gradle/
+android/app/debug/
+android/app/release/
+android/key.jks
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Flutter.podspec.json
+
+# macOS
+macos/Flutter/ephemeral/
+macos/Pods/
+macos/.symlinks/
+
+# Web
+web/.dart_tool/
+web/.flutter-plugins/
+web/.flutter-plugins-dependencies/
+web/.packages
+web/build/
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.iml
+
+# Xcode
+xcuserdata/
+*.xcodeproj/*
+*.xcworkspace/*
+ios/Flutter/App.xcworkspace/
+ios/Flutter/Flutter.podspec
+ios/Flutter/Flutter.xcconfig
+
+# Logs & Debugging
+*.log
+*.crash
+*.swp
+*.swo
+*.DS_Store
+*.lock
+
+# Generated Files
+pubspec.lock
+flutter_export_environment.sh
+generated_plugin_registrant.dart
+
+# Image Assets (Remove if you want images in source control)
+images/*.png
+
+# History Files
+.history/
