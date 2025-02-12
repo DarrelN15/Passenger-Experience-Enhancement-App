@@ -4,28 +4,28 @@
 The **Passenger Experience App** is a Flutter-based mobile and web application designed to simulate an in-flight passenger entertainment and control system. Users can navigate through different sections, including flight information, personal cabin controls, and entertainment options.
 
 ### 🏠 Home Screen
-<img src="images/homepage.png" alt="Home Screen" width="450"/>
+<img src="passenger_experience_app/images/homepage.png" alt="Home Screen" width="450"/>
 
 ## Features
 
 ### 🎫 Flight Information
 - Displays **real-time flight details** such as status, flight number, departure time, and gate information.
 
-<img src="images/flight-info.png" alt="Flight Info" width="450"/>
+<img src="passenger_experience_app/images/flight-info.png" alt="Flight Info" width="450"/>
 
 ### 💡 Personal Controls
 - **Lighting Adjustment**: Users can control the cabin light intensity.
 - **Seat Recline**: Adjustable seat recline feature.
 - **Temperature Control**: Allows setting the preferred cabin temperature.
 
-<img src="images/controls.png" alt="Personal Controls" width="450"/>
+<img src="passenger_experience_app/images/controls.png" alt="Personal Controls" width="450"/>
 
 ### 🎬 Entertainment
 - **Movies**: Access to a list of in-flight movies.
 - **Music**: Browse and play music tracks.
 - **Games**: Selection of interactive games for passengers.
 
-<img src="images/entertainment.png" alt="Entertainment" width="450"/>
+<img src="passenger_experience_app/images/entertainment.png" alt="Entertainment" width="450"/>
 
 ## Tech Stack
 - **Frontend**: Flutter (Dart)
